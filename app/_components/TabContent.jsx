@@ -2,6 +2,7 @@
 import React,{useState} from 'react'
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const TabContent = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -34,7 +35,7 @@ const TabContent = () => {
                         </select>
                     </div>
                     <div className="md:col-span-2 flex justify-center place-items-end">
-                        <button className="md:w-28 w-full border border-primary text-primary rounded-lg py-2 px-6 hover:bg-[#0A91AB33] -foreground">
+                        <button className="md:w-28 w-full border border-primary text-primary rounded-lg py-2 px-6 hover:bg-[#0A91AB33] ">
                             Beli
                         </button>
                     </div>
@@ -108,6 +109,18 @@ const TabContent = () => {
             </div>
         )
       case 3:
+        return (
+            <div>
+              <label className="block mb-2 text-sm font-medium text-gray-700">
+                Pilih Opsi
+              </label>
+              <select className="w-full p-2 border border-gray-300 rounded">
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+                <option value="option3">Option 3</option>
+              </select>
+            </div>
+          );
       case 4:
         return (
           <div>
@@ -133,7 +146,7 @@ const TabContent = () => {
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`flex-shrink-0 px-16 py-2 text-sm font-medium transition duration-300 ${
+            className={`flex-shrink-0 px-[4.3rem] py-2 text-sm font-medium transition duration-300 ${
               activeTab === index
                 ? 'border-b-4  border-primary'
                 : ''
@@ -142,6 +155,9 @@ const TabContent = () => {
             {tab}
           </button>
         ))}
+        <button className="text-primary ml-3 py-2 px-4 hover:bg-[#0A91AB33]">
+            <BsThreeDotsVertical />
+        </button>
       </div>
       <div className="mt-4">
         {tabs.map((tab, index) => (
