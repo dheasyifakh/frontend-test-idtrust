@@ -10,7 +10,7 @@ const Voucher = () => {
                 </div>
                 <div class="md:col-span-7 p-2">
                     <h1 className="text-5xl">PAY DAY SALE!!</h1>
-                    <h2 className="my-6 text-2xl text-gray-500">Nikmati promo spektakuler <span className="text-primary">idshop</span> setiap tanggal 25!</h2>
+                    <h2 className="my-6 text-2xl text-[#61646B]">Nikmati promo spektakuler <span className="text-primary">idshop</span> setiap tanggal 25!</h2>
                     <button className="w-full bg-primary hover:bg-[#3BA7BC] text-white text-center py-3 rounded-md">
                         Ikuti Event
                     </button>

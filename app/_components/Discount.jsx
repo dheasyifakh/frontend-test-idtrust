@@ -55,13 +55,13 @@ const Discount = () => {
       </div>
       <div className="relative group">
         <button
-          className="absolute left-[-2px] text-white top-1/2 transform -translate-y-1/2 bg-primary p-2 opacity-0 group-hover:opacity-100 transition-opacity z-10 rounded-md"
+          className="absolute left-[-2px] text-white top-1/2 transform -translate-y-1/2 bg-primary px-4 py-2 opacity-0 group-hover:opacity-100 transition-opacity z-10 rounded-md"
           onClick={prevSlide}
         >
           <FiChevronLeft/>
         </button>
         <button
-          className="absolute right-[-2px] text-white top-1/2 transform -translate-y-1/2 bg-primary p-2 opacity-0 group-hover:opacity-100 transition-opacity z-10 rounded-md"
+          className="absolute right-[-2px] text-white top-1/2 transform -translate-y-1/2 bg-primary px-4 py-2  opacity-0 group-hover:opacity-100 transition-opacity z-10 rounded-md"
           onClick={nextSlide}
         >
           <FiChevronRight/>
@@ -78,14 +78,14 @@ const Discount = () => {
                 style={{ minWidth: `${100 / itemsToShow}%` }}
               >
                 <div className="relative">
-                  <div className="overflow-hidden shadow-lg hover:border-2 hover:border-primary">
-                    <img src={product.imgSrc} alt={product.name} className="w-full h-48 object-cover" />
+                  <div className="overflow-hidden hover:border-2 hover:border-primary hover:rounded-md">
+                    <img src={product.imgSrc} alt={product.name} className="w-32 h-32 object-center mx-auto mt-4" />
                     <div className="p-4">
                       <h3 className="text-md">{product.name}</h3>
                       <p className="text-lg font-bold">{product.price}</p>
                     </div>
                   </div>
-                  <div className="absolute top-[-10px] right-[-14px] bg-primary text-white text-xs px-2 py-1">
+                  <div className="absolute top-[5px] right-0 bg-primary text-white text-xs px-2 py-1">
                     {product.discount}
                   </div>
                 </div>

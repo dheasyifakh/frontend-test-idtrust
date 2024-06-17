@@ -25,8 +25,8 @@ const Recommendation = () => {
         {products.map(product => (
           <div key={product.id} className="p-2">
           <div className="relative">
-            <div className=" overflow-hidden shadow-lg hover:border-2 hover:border-primary">
-              <img src={product.imgSrc} alt={product.name} className="w-full h-48 object-cover"/>
+            <div className="overflow-hidden hover:border-2 hover:border-primary hover:rounded-md">
+              <img src={product.imgSrc} alt={product.name} className="w-32 h-32 object-center mx-auto mt-4"/>
               <div className="p-4">
                 <h3 className="text-md ">{product.name}</h3>
                 <p className="text-lg font-bold">{product.price}</p>
@@ -35,7 +35,7 @@ const Recommendation = () => {
                 </div>
               </div>
             </div>
-            <div className={`${product.discount}` ? 'absolute top-[-10px] right-[-14px] bg-primary text-white text-xs px-2 py-1' : "hidden"}>{product.discount}</div>
+            <div className={`${product.discount}` ? 'absolute top-[5px] right-0 bg-primary text-white text-xs px-2 py-1' : "hidden"}>{product.discount}</div>
           </div>
         </div>
         ))}

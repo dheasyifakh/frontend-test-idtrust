@@ -27,19 +27,27 @@ const Category = () => {
           const isFirstCategory = index === 0;
           const isLastCategoryInFirstRow = index === 5;
           const isFirstCategoryInFirstRow = index === 6;
-          const isLastCategoryInLastRow = index === 11;
-
+          const isLastCategoryInLastRow =  index === 11;
+          const second = index === 2;
+          const third = index === 3;
+          const eight= index === 8;
+          const ninth = index === 9;
 
           return (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center p-8 border border-gray-200 hover:border-primary hover:border-2 
+              className={`flex flex-col items-center justify-center p-8 border border-[#AFB1B6] hover:border-primary hover:border-2 
                 ${isInFirstRow ? 'border-t-0' : ''} 
                 ${isInSecondRow ? 'border-b-0' : ''} 
                 ${isFirstCategory ? 'border-l-0' : ''} 
                 ${isLastCategoryInFirstRow ? 'border-r-0' : ''}
                 ${isFirstCategoryInFirstRow ? 'border-l-0' : ''} 
-                ${isLastCategoryInLastRow ? 'border-r-0' : ''}`}
+                ${isLastCategoryInLastRow ? 'border-r-0' : ''}
+                ${second? 'border-r-0 md:border-r' : ''}
+                ${third? 'border-l-0 md:border-l' : ''}
+                ${eight? 'border-r-0 md:border-r' : ''}
+                ${ninth? 'border-l-0 md:border-l' : ''}
+              `}
             >
                 <img src={category.icon} alt="" />
               <div className="mt-2 text-center">{category.text}</div>
