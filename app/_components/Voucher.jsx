@@ -11,7 +11,7 @@ const Voucher = () => {
                 <div class="md:col-span-7 p-2">
                     <h1 className="text-5xl">PAY DAY SALE!!</h1>
                     <h2 className="my-6 text-2xl text-gray-500">Nikmati promo spektakuler <span className="text-primary">idshop</span> setiap tanggal 25!</h2>
-                    <button className="w-full bg-primary text-white text-center py-3 rounded-md">
+                    <button className="w-full bg-primary hover:bg-[#3BA7BC] text-white text-center py-3 rounded-md">
                         Ikuti Event
                     </button>
                 </div>
@@ -25,7 +25,7 @@ const Voucher = () => {
                 <div class="md:col-span-7 p-2">
                     <h1 className="text-5xl">GRATIS ONGKIR 50%</h1>
                     <h2 className="my-6 text-2xl text-white">Klaim voucher gratis ongkir kirim Kamu.</h2>
-                    <button className="w-full bg-secondary text-white text-center py-3 rounded-md">
+                    <button className="w-full bg-secondary hover:bg-[#FFCD6A] text-white text-center py-3 rounded-md">
                         Klaim Voucher
                     </button>
                 </div>

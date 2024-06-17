@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
         <div className="md:px-20 shadow-md h-12 md:h-32 fixed w-full bg-white" style={{zIndex: 1000}}>
           <Header/>
         </div>
-        <div className="md:px-24 py-24 ">
+        <div className="md:px-24 py-10 md:py-24 ">
           {children}
         </div>
         <Footer/>

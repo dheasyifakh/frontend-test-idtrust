@@ -42,13 +42,15 @@ const Header = () => {
   ]
   return (
     <div className=''>
-         
         <div className="md:flex justify-end mt-4 hidden">
-            <div className="">
+            <div className="relative">
+                <span className="absolute inset-y-0 left-0 flex items-center pl-3">
+                    <BiGlobe/>
+                </span>
                 <select
                     name="selectLanguage"
                     id="selectLanguage"
-                    className="mt-1.5 w-full rounded-lg border border-neutral-400 text-gray-700 sm:text-sm p-2"
+                    className="mt-1.5 w-full rounded-lg border border-neutral-400 text-gray-700 sm:text-sm p-2 px-6"
                 >
                     <option value="Indonesia"> Bahasa Indonesia</option>
                     <option value="Inggris"> English</option>
@@ -58,20 +60,10 @@ const Header = () => {
             <Link href="#" className="inline-block text-primary px-5 py-3 text-sm font-medium">Masuk</Link>
             <Link href='/login' className='inline-block rounded-lg bg-primary px-5 py-3 text-sm font-medium text-white'>Daftar</Link>
         </div>
-        <div className="md:flex items-center gap-20 hidden">
+        <div className="md:flex items-center gap-4 hidden pr-44">
             <Image src="/Logo.png" alt="logo"
                 width={180} height={80}
             />
-            {/* <ul className="md:flex gap-8 hidden">
-                { Menu.map((item, index)=>(
-                    <Link href={item.path} key={index}>
-                        <li className="hover:text-primary cursor-pointer hover:scale-105 transition-all ease-in-out">{item.name}</li>
-                    </Link>
-                ))
-
-                }
-            </ul> */}
-            
 
             <div className="relative w-full">
                 <label for="Search" className="sr-only"> Search </label>
